@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import player_walk from './player_walk.png';
 import handleMovement from './movement';
 
-const Player = ({ position }) => {
+const Player = ({ position, spriteLocation }) => {
     return (
         <div
             style={{
@@ -12,7 +12,7 @@ const Player = ({ position }) => {
                 top: position[1],
                 left: position[0],
                 backgroundImage: `url('${player_walk}')`,
-                backgroundPosition: '0 0',
+                backgroundPosition: spriteLocation,
                 width: '40px',
                 height: '40px'
             }}
