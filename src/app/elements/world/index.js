@@ -2,6 +2,7 @@ import React from 'react';
 import Player from '../player';
 import Map from '../map';
 
+import { MAP_HEIGHT, MAP_WIDTH } from '../../../config/constants';
 import { tiles } from '../../../data/maps/1';
 import store from '../../../config/store';
 import { mapActions } from '../../../config/constants';
@@ -18,8 +19,8 @@ const World = () => {
         <div
             style={{
                 position: 'relative',
-                width: '800px',
-                height: '480px',
+                width: `${MAP_WIDTH}px`,
+                height: `${MAP_HEIGHT}px`,
                 margin: '20px auto'
             }}
         >
