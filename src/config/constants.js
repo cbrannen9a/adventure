@@ -1,7 +1,15 @@
 export const SPRITE_SIZE = 40;
+export const MAP_SIZE = 50;
+export const MAP_HEIGHT = SPRITE_SIZE * MAP_SIZE;
+export const MAP_WIDTH = SPRITE_SIZE * MAP_SIZE;
 
-export const MAP_HEIGHT = SPRITE_SIZE * 12;
-export const MAP_WIDTH = SPRITE_SIZE * 20;
+//world builder variables
+export const builder = {
+    N_ITERATIONS: 4,
+    discard: true,
+    w_ratio: 0.45,
+    h_ratio: 0.45
+};
 
 export const directions = {
     NORTH: 'NORTH',
@@ -18,7 +26,8 @@ export const tileTypes = {
 };
 
 export const playerActions = {
-    MOVE_PLAYER: 'MOVE_PLAYER'
+    MOVE_PLAYER: 'MOVE_PLAYER',
+    SET_POS: 'SET_POS'
 };
 
 export const mapActions = {

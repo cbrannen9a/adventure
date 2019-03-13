@@ -15,9 +15,7 @@ const Map = ({ tiles }) => {
                 margin: '10px auto'
             }}
         >
-            {tiles.map(row => (
-                <MapRow key={uuidv4()} tiles={row} />
-            ))}
+            {tiles && tiles.map(row => <MapRow key={uuidv4()} tiles={row} />)}
         </div>
     );
 };

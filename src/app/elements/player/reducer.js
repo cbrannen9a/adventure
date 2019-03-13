@@ -13,6 +13,12 @@ const player = (state = initialState, action) => {
             return {
                 ...action.payload
             };
+
+        case playerActions.SET_POS:
+            return {
+                ...state,
+                position: action.position
+            };
         default:
             return state;
     }
